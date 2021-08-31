@@ -1,0 +1,67 @@
+/* ----------------------------headerNav */
+nav div.menuBox ul li a.PageNews{
+    color:rgb(224, 16, 16) !important;
+}
+/* ----------------------------section */
+div.section div.theContainer h1.thePageTitle{
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(224, 16, 16);
+}
+div.row div.theCard div.theInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div.row div.theCard div.theInfo h1{
+    color:#222;
+    font-size: 1.8rem;
+    margin:0 auto 20px auto;
+} 
+div.row div.theCard div.theInfo p{
+    color:#222;
+    font-size: 1rem;
+    margin:0 auto 20px auto;
+}
+div.row div.theCard div.theInfo button{
+    width:120px;
+    height:36px;
+    border:1px solid rgb(224, 16, 16);
+    background-color: rgb(224, 16, 16);
+    color:white;
+    border-radius: 7px;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.35); 
+}
+div.section div.theCard{
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.65);
+}
+div.section div.theCard:hover{
+    transform: scale(1.01);
+    transition:all 0.2s;
+}
+
+@media screen and (max-width:1000px){
+    div.row div.theCard div.theInfo h1{
+        font-size: 1.6rem;
+        font-weight: 500;
+    } 
+    div.row div.theCard div.theInfo p{
+        color:#222;
+        font-size: 0.9rem;
+    }
+    div.row div.theCard div.theInfo button{
+        display:none;
+    }
+}
+@media screen and (max-width:576px){
+    div.section div.theCard a{
+        display:flex;
+        flex-direction: column;
+    }
+    div.section div.theCard:hover{
+        transform: scale(1.03);
+        transition:all 0.2s;
+    }
+}

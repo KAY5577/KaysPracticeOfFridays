@@ -1,0 +1,135 @@
+/* ----------------------------headerNav */
+nav div.menuBox ul li a.PageNews{
+    color:rgb(224, 16, 16) !important;
+}
+/* -------------------section sectionNewsTypeA*/
+div.section{
+    min-height: calc(100vh - 255px);
+    /* header:100px + footer:155px = 255px */
+}
+div.section div.theContainer{
+    max-width: 900px;
+}
+div.sectionNewsTypeA div.theContainer div.row h1{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color:rgb(224, 16, 16);
+    margin:1.5rem auto 1rem 0;
+}
+@media screen and (max-width:576px) {
+    div.sectionNewsTypeA div.theContainer div.row h1.theH1{
+        display:none;
+    }
+}
+div.sectionNewsTypeA div.theContainer div.row h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:rgb(224, 16, 16);
+    margin:1.5rem auto 0.75rem 0;
+}
+div.sectionNewsTypeA div.theContainer div.row h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin:0.75rem auto 0.75rem 0;
+}
+div.sectionNewsTypeA div.theContainer div.row h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin:0;
+    color:rgb(224, 16, 16);
+}
+div.sectionNewsTypeA div.theContainer div.row div.OrignalPrice h4{
+    color:rgb(22, 22, 138);
+}
+div.sectionNewsTypeA div.theContainer div.row p,
+div.sectionNewsTypeA div.theContainer div.row ul{
+    font-size: 1.1rem;
+    margin:0 auto 0.75rem 0;
+    line-height: 1.3rem;
+    list-style-position: inside;
+}
+div.sectionNewsTypeA div.theContainer div.row ul{
+    padding-left:16px;
+}
+div.sectionNewsTypeA div.theContainer div.row div.imgCard{
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.3);
+}
+div.sectionNewsTypeA div.theContainer div.row div.theImgCards{
+    padding:0 -16px;
+}
+div.sectionNewsTypeA div.theContainer div.row div.imgCard img{
+    min-width:100%;
+}
+/* -------------------section sectionNewsTypeB*/
+div.sectionNewsTypeB div.InfoBox{
+    padding:0 0 0 16px;
+}
+@media screen and (max-width:900px){
+    div.sectionNewsTypeB div.row{
+        padding-left: 16px !important;
+        padding-right:16px !important;
+    } 
+}
+div.sectionNewsTypeB div.NewH1{
+    display:none;
+}
+@media screen and (max-width:576px) {
+    div.sectionNewsTypeB div.row{
+        margin:auto;
+    }
+    div.sectionNewsTypeB div.NewH1{
+        display:block;
+        text-align: center;
+    }
+    div.sectionNewsTypeB div.ImgBox{
+        width:85%;
+        margin:0 auto;
+    }
+    div.sectionNewsTypeB div.InfoBox{
+        padding:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.sectionNewsTypeB div.InfoBox a{
+        width:85%;
+        text-align: center;
+    }
+    div.sectionNewsTypeB div.InfoBox a button{
+        width:100%;
+    }
+}
+div.sectionNewsTypeB a{
+    display:inline-block;
+}
+div.sectionNewsTypeB a button{
+    width:192px;
+    height:36px;
+    border-radius: 5px;
+    background-color: rgb(224, 16, 16);
+    border:1px solid rgb(224, 16, 16);
+    color:#fff;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.3);
+}
+/* -------------------section sectionNewsTypeC*/
+div.sectionNewsTypeC div.songGaoBox div.songGaoImgBox:nth-child(1){
+    padding-right:16px !important;
+}
+div.sectionNewsTypeC div.songGaoBox div.songGaoImgBox:nth-child(2){
+    padding-left:16px !important;
+}
+@media screen and (max-width:576px) {
+    div.sectionNewsTypeC div.songGaoBox div.songGaoImgBox:nth-child(1),
+    div.sectionNewsTypeC div.songGaoBox div.songGaoImgBox:nth-child(2){
+        padding:0 !important;
+    }
+    div.sectionNewsTypeC div.songGaoBox:nth-child(even) div.row{
+        flex-direction: column-reverse !important;
+    }
+    div.sectionNewsTypeC div.songGaoBox div.row{
+        padding-bottom:0 !important;
+    }
+}

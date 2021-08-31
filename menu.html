@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Menu</title>
+</head>
+<body>
+    <!-- -----------------------------------------nav -->
+    <nav id="theNav"></nav>
+    <!-- -------------------------------------section -->
+    <div class="section m-0 p-0">
+        <!-- ********** 卡片彈跳視窗 **********-->
+        <div class="PopUpBoxBg">
+            <div class="PopUpBox d-flex">
+                <div class="col-12 col-lg-6 p-0 PopUpImgBox">
+                    <img id="thePopUpImg" src="">
+                </div>
+                <div class="col-12 col-lg-6 PooUpInfoBox">
+                    <h1 id="thePopUpH1" class="m-2 p-0">餐點名稱</h1>
+                    <h2 id="thePopUpH2" class="m-2 p-0">價格</h2>
+                    <p id="thePopUpP" class="m-0 mt-2 p-1">詳細介紹</p>
+                </div>
+            </div>
+        </div>
+        <!-- **********************************-->
+
+        <div class="container-fluid theContainer m-0 p-0">
+            <div class="row m-0 p-0">
+                    <div class="menuBarBox col-12 m-0 p-0">
+                        <!-- (1)完整菜單選項 ==================== -->
+                        <div class="menuBar col-12 p-0 d-flex">
+                            <div class="col-12 menu menuAll d-flex justify-content-center align-items-center">
+                                完整菜單
+                                <!-- <div class="theMenuallow"> -->
+                                    <span id="allowRight" class="material-icons" style="font-size: 30px; color:#fff;">keyboard_arrow_right</span>
+                                    <span id="allowDown" class="material-icons" style="font-size: 30px; color:red;">expand_more</span>
+                                <!-- </div> -->
+                            </div>
+                            <div class="col-6 menu menuA">精緻美食</div>
+                            <div class="col-6 menu menuB">極致飲品</div>
+                        </div>
+                        <!-- (2)完整菜單-精緻美食 清單============ -->
+                        <div class="menuList menuListA col-12 p-0 w-100">
+                            <ul class="m-0 p-0">
+                                <li class="theMenuA">完整菜單</li>
+                                <li class="theMenuA">獨創開胃菜</li>
+                                <li class="theMenuA">湯品與沙拉</li>
+                                <li class="theMenuA">炭烤牛排</li>
+                                <li class="theMenuA">炭烤豬肋排</li>
+                                <li class="theMenuA">精選主菜</li>
+                                <li class="theMenuA">墨西哥餐點</li>
+                                <li class="theMenuA">漢堡與三明治</li>
+                                <li class="theMenuA">甜點</li>
+                                <li class="theMenuA">蔬食系列</li>
+                            </ul>
+                        </div>
+                        <!-- (2)完整菜單-極致飲品 清單============ -->
+                        <div class="menuList menuListB col-12 p-0 w-100">
+                            <ul class="m-0 p-0">
+                                <li class="theMenuB">完整菜單</li>
+                                <li class="theMenuB">星期五獨創系列</li>
+                                <li class="theMenuB">星期五最愛系列</li>
+                                <li class="theMenuB">瑪格利特&摩西多</li>
+                                <li class="theMenuB">精釀生啤酒&特選瓶裝啤酒</li>
+                                <li class="theMenuB">精選葡萄酒</li>
+                                <li class="theMenuB">非酒精特調系列</li>
+                                <li class="theMenuB">餐後調飲</li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- ======================================== -->
+                    <!-- ======================================== -->
+                    <!-- ======================================== -->
+                    <div class="col-12 m-0 p-0 ps-1 pe-1">
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A1獨創開胃菜~~~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">獨創開胃菜</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">自創開胃菜組合</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$630</h2>
+                                        <p class="theDishExplain" style="display:none;">一次嚐盡所有Fridays™經典美味。快來組合屬於您的自創拼盤，可自選三樣開胃。香酥馬芝拉條 / 馬鈴薯皮 / 紐約辣雞翅 / 田納西芝麻雞柳 / 酥炸魚柳條。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">香酥馬芝拉條</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$300</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">馬鈴薯皮</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$350</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">紐約辣雞翅</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$380</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">愛德荷州龍捲風</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$330</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-06.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">帕米森雞肉酥餅</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$320</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-07.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">義式蒜辣小管圈</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$380</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-08.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">英式炸魚薯條</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$350</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-09.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">三式超級精選</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$950</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-10.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">星期五海鮮總匯</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$630</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-11.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">雞肉起司極品脆片</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$330</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-12.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">未來肉極品脆片</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$390</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-13.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">奶油白醬海鮮與雙醬炭烤豬肉披薩雙拼<br>(信義限定)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$625</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-14.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">雙醬炭烤豬肉與義式芝麻葉披薩雙拼<br>(信義限定)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$575</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a1-15.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">義式蕃茄芝麻葉與奶油白醬海鮮披薩雙拼<br>(信義限定)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$600</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A2湯品與沙拉~~~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">湯品與沙拉</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a2-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">凱撒沙拉</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$400</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a2-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">金色陽光小管沙拉</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$480</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a2-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">嘉年華雞肉沙拉</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$480</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a2-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">每日精選湯品</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$99</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A3炭烤牛排~~~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">炭烤牛排</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a3-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">霸氣總裁拼盤</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$1590</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a3-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">紐約牛排</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$1100</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a3-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">肋眼牛排</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$1100</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a3-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">沙朗牛排</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$720</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A4炭烤豬肋排~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">炭烤豬肋排</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a4-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">美式炭烤豬肋排</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">全份$980<br>半份$620</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a4-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">田納西威士忌炭烤豬肋排</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">全份$980<br>半份$620</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a4-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">雙醬炭烤豬肋排</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">全份$980<br>半份$620</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a4-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">經典哈燒桶</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$750</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A5精選主菜~~~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">精選主菜</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">泰瘋狂酸辣海鮮麵</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$610</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">青醬鮭魚彩虹蔬菜米</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$590</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">紫蘇蕃茄炭烤雞肉麵</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$450</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">香辣泰國雞肉麵</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$450</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">費特希尼鮮蝦雞肉寬麵</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$630</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-06.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">星期五香烤半雞</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$650</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-07.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">加勒比海海鮮飯</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$550</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a5-08.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">香檸黃金魚排鮮飯</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$650</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A6墨西哥餐點~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">墨西哥餐點</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a6-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">牛排法士達</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$780</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a6-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">雞肉法士達</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$590</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a6-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">綜合法士達</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$690</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a6-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">海鮮法士達</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$630</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A7漢堡與三明治~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">漢堡與三明治</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a7-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">培根起司漢堡</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$390</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a7-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">超級三重奏漢堡</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$490</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a7-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">山胡桃炭烤雞肉三明治</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$390</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a7-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">鮮蔬農夫漢堡</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$470</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A8甜點~~~~~~~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">甜點</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a8-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">島嶼微風聖代</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$330</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a8-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">摩卡咖啡冰淇淋派</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$199</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a8-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">鳳梨蘭姆起司派</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$260</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a8-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">巧克力布朗尼</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$260</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a8-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">星期五巨無霸<br>(松高限定)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$350</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- A9蔬食系列~~~~~~~~~~~~~ -->
+                        <ul class="theMenuACards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">蔬食系列</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a9-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">未來肉極品脆片</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$390</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a9-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">羅生美生菜沙拉</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$400</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a9-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">蒜香鮮蔬義大利麵</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$340</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a9-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">綜合蔬菜三明治</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/a9-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">鮮蔬農夫漢堡</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$470</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ======================================== -->
+                    <!-- ======================================== -->
+                    <!-- ======================================== -->
+                    <div class="col-12 m-0 p-0 ps-1 pe-1">
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- B1星期五獨創系列~~~~~~~ -->
+                        <ul class="theMenuBCards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">星期五獨創系列</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b1-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">橘色柚惑</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$220</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b1-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">蜜桃甜蘋冰茶</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b1-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">黑莓長島冰茶</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$220</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b1-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">非常莓好香格里拉</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$280</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b1-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">蜜桃白酒香格里拉</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$280</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b1-06.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">柑橘紅酒香格里拉</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$280</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- B2星期五最愛系列~~~~~~~ -->
+                        <ul class="theMenuBCards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">星期五最愛系列</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b2-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">莓果紅心戴克利</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$250</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b2-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">檸檬樹極品</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b2-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">颶風來襲</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b2-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">長島冰茶極品</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- B3瑪格麗特&摩西多~~~~~~~ -->
+                        <ul class="theMenuBCards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">瑪格麗特&摩西多</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b3-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">瑪格麗特極品</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b3-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">瑪格麗特皇后</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$380</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b3-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">哈辣瑪格麗特極品</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b3-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">草莓羅勒瑪格麗特</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$380</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b3-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">摩西多極品</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b3-06.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">蘋果摩西多</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$190</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b3-07.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">玫瑰情人摩西多</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$220</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- B4精釀生啤酒 & 特選瓶裝啤酒~~~~~~~ -->
+                        <ul class="theMenuBCards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">精釀生啤酒 & 特選瓶裝啤酒</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">星期五柳橙白生啤</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$170/$200</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">星期五皮爾森生啤</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$170/$200</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">美國波士頓生啤酒</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$220</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">生力生啤酒</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$160</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">生啤同樂會</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$200</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-06.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">憤怒果園脆蘋果酒</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$190</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-07.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">可樂娜啤酒</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$160</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-08.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">百威啤酒</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$150</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b4-09.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">台灣啤酒(金牌)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$140</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- B5精選葡萄酒~~~~~~~~~~~ -->
+                        <ul class="theMenuBCards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">精選葡萄酒</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b5-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">帕德納芮名門莊園(卡內本蘇維翁)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$200/$750</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b5-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">帕德納芮名門莊園(梅洛))</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$220/$800</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b5-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">達拉巴家百年莊園(白蘇維翁)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$200/$750</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b5-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">達拉巴家百年莊園(夏多內)</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$220/$800</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- B6非酒精特調系列~~~~~~~ -->
+                        <ul class="theMenuBCards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">非酒精特調系列</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">奶昔</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">香檸莓果茶</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">藍莓鮮果茶</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">芒果蜜桃茶</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">艷陽洛神茶</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-06.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">金質獎章</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$200</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-07.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">甜心莓果園</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$200</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-08.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">經典摩西多</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-09.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">瑪格麗特</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b6-10.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">邁泰</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$180</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <!-- B7餐後調飲~~~~~~~~~~~~ -->
+                        <ul class="theMenuBCards row g-4 m-0 p-0 col-12">
+                            <li class="col-12 theMenuTitle mt-3">餐後調飲</li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b7-01.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">接骨木檸檬馬丁尼</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$250</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b7-02.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">草莓戴克利</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$220</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b7-03.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">草莓鬆餅</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$250</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b7-04.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">冰原泥漿極品</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$290</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b7-05.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">冰淇淋三明治</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$250</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-sm-6 col-md-4 col-xl-3 mt-2 mb-2">
+                                <div class="theCard mb-2">
+                                    <img class="theDishImg w-100" src="./img/b7-06.jpg">
+                                    <div class="infobox">
+                                        <h1 class="m-0 theDishName">愛爾蘭咖啡</h1>
+                                        <h2 class="m-0 mt-2 theDishPrice">$190</h2>
+                                        <p class="theDishExplain" style="display:none;">產品詳細介紹(略)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ======================================== -->
+                    <!-- ======================================== -->
+                    <!-- ======================================== -->
+            </div> <!-- row -->
+        </div> <!-- container-fluid -->
+    </div> <!-- section -->
+    <!-- -----------------------------------------footer -->
+    <!-- -----------------------------------------footer -->
+    <footer id="theFooter"></footer>
+    <!-- ------------------------------ -->
+    <!-- ------------------------------ -->
+    <!-- ------------------------------ -->
+    <script src="./js/menu.js"></script>
+    <script>
+        // import headerNav.html
+        $('#theNav').load('headerNav.html');
+        // import header.html
+        $('#theFooter').load('footer.html');
+    </script>
+</body>
+</html>

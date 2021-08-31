@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-size: 16px;
+}
+
+.border-black{border:1px solid black;}
+.border-red{border:1px solid red;}
+.border-blue{border:1px solid blue;}
+.border-green{border:1px solid green;}
+.bg-gray{background-color: #f5f5f5;}
+.bg-blue{background-color: lightblue;}
+.bg-yellow{background-color: lightyellow;}
+

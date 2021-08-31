@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <title>Booking</title>
+</head>
+<body>
+    <!-- -----------------------------------------header -->
+    <header>
+        <div class="container-fluid p-0 d-flex justify-content-end">
+            <div class="theLang d-flex justify-content-center align-items-center">繁中
+                <!-- <img src="./img/icon_down.jpg"> -->
+                <span class="material-icons">expand_more</span>
+            </div>
+
+            <div class="langBox">
+                <div class="langItem">繁體中文</div>
+                <div class="langItem">English</div>
+            </div>
+        </div>
+    </header>
+    <!-- -----------------------------------------banner -->
+    <div class="banner">
+        <div class="container-fluid theContainer">
+            <!-- 輪播圖片區 -->
+            <div class="row">
+                <div class="showImgBox">
+                    <div class="imgBox d-flex" id="theImgBox">
+                        <img src="./img/booking_banner_1.jpg">
+                        <img src="./img/booking_banner_2.jpg">
+                        <img src="./img/booking_banner_3.jpg">
+                        <img src="./img/booking_banner_4.jpg">
+                        <img src="./img/booking_banner_5.jpg">
+                        <img src="./img/booking_banner_6.jpg">
+                        <img src="./img/booking_banner_7.jpg">
+                        <img src="./img/booking_banner_8.jpg">
+                    </div>
+                </div>
+
+                <!-- 輪播圖片按鈕區 -->
+                <div class="bannerBtnBox d-flex justify-content-center">
+                    <div class="bannerBtnBox2 d-flex">
+                        <div class="bannerBtn"></div>
+                        <div class="bannerBtn"></div>
+                        <div class="bannerBtn"></div>
+                        <div class="bannerBtn"></div>
+                        <div class="bannerBtn"></div>
+                        <div class="bannerBtn"></div>
+                        <div class="bannerBtn"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------section1 -->
+    <div class="section section1">
+        <div class="container-fluid theContainer">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <h1>TGI FRIDAYS</h1>
+                    <P>美式 . 百貨商圈</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------section2 -->
+    <div class="section section2">
+        <div class="container-fluid theContainer p-0">
+            <div class="row pb-0">
+                <!-- 標題 -->
+                <div class="col-12 p-0 mt-4">
+                    <h4>選擇訂位時段</h4>
+                </div>
+                <!-- ------------------------------------------left block -->
+                <div class="col-12 col-lg-6 mt-3">
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            <h5>用餐人數</h5>
+                        </div>
+
+                        <div class="col-6 p-0">
+                            <select class="personQty personQty1">
+                                <option value="adult0">請選擇用餐人數</option>
+                                <option value="adult1">1位大人</option>
+                                <option value="adult2" selected>2位大人</option>
+                                <option value="adult3">3位大人</option>
+                                <option value="adult4">4位大人</option>
+                                <option value="adult5">5位大人</option>
+                                <option value="adult6">6位大人</option>
+                                <option value="adult7">7位大人</option>
+                                <option value="adult8">8位大人</option>
+                            </select>
+                        </div>
+
+                        <div class="col-6 p-0">
+                            <select class="personQty personQty2">
+                                <option value="kid*0" selected>0位小孩</option>
+                                <option value="kid*1">1位小孩</option>
+                                <option value="kid*2">2位小孩</option>
+                                <option value="kid*3">3位小孩</option>
+                                <option value="kid*4">4位小孩</option>
+                                <option value="kid*5">5位小孩</option>
+                                <option value="kid*6">6位小孩</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- -----------------------------------------right block -->
+                <div class="col-12 col-lg-6 mt-3 p-0">
+                    <div class="col-12">
+                        <h5>用餐日期</h5>
+                    </div>
+                    <div class="col-12">
+                        <input type="date" class="theDate">
+                    </div>
+                </div>
+                <!-- 警語:訂位注意事項 -->
+                <div class="col-12 p-0 mt-1">
+                    <p class="theWarning">可接受 1-8 位訂位（含大人與小孩）</p>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container-fluid -->
+    </div> <!-- section2 -->
+    
+    <!-- ---------------------------------------section3 -->
+    <div class="section section3">
+        <div class="container-fluid theContainer p-0">
+            <!-- 時間區段 -->
+            <div class="row pb-0 timeBox">
+                <div class="col-12 DivSlectTimeBlock p-0 mt-0">
+                    <button class="btnSlectTimeBlock">整天</button>
+                    <button class="btnSlectTimeBlock">中午</button>
+                    <button class="btnSlectTimeBlock">下午</button>
+                    <button class="btnSlectTimeBlock">晚上</button>
+                </div>                
+                <div class="col-12 DivshowTimeBlock p-0 d-flex mb-2">
+                    <p class="theTimeArea"></p>
+                    <p class="theTimeArea">11:30-14:00</p>
+                    <p class="theTimeArea">14:00-17:00</p>
+                    <p class="theTimeArea">17:00-23:00</p>
+                </div>
+            </div> <!-- row1 -->
+
+            <!-- =========================================================-->
+            <!-- ====================門市1====================-->
+            <div class="row aboutShop">
+                <!-- -----------------圖片 -->
+                <div class="shopImg">
+                    <img class="w-100" src="./img/shopTainan.jpg">
+                </div>
+                <!-- -----------------門市資訊 -->
+                <div class="shopInfoBox col">
+                    <div class="shopInfo">
+                        <h3 class="shopName">1-新光三越新天地本館</h3>
+                        <p class="shopAdd">新光三越台南新天地本館6樓 6F., No. 658, Sec. 1, Ximen Road, West Central Dist., Tainan City</p>
+                        <!-- -----------------訂位日期時間 -->
+                        <div class="bookDT">
+                            <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                            <div class="btnBox d-flex">
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:45</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:00</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:15</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">...</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- ====================門市2====================-->
+            <div class="row aboutShop">
+                <!-- -----------------圖片 -->
+                <div class="shopImg">
+                    <img class="w-100" src="./img/shopKS.jpg">
+                </div>
+                <!-- -----------------門市資訊 -->
+                <div class="shopInfoBox col">
+                    <div class="shopInfo">
+                        <h3 class="shopName">2-夢時代餐廳Dream Mall Restaurant</h3>
+                        <p class="shopAdd">高雄市前鎮區中華五路789號3F 3F., No. 789, Zhonghua 5th Road, Qianzhen District, Kaohsiung City</p>
+                        <!-- -----------------訂位日期時間 -->
+                        <div class="bookDT">
+                            <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                            <div class="btnBox d-flex">
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:45</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:00</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:15</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">...</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- ====================門市3====================-->
+            <div class="row aboutShop">
+                <!-- -----------------圖片 -->
+                <div class="shopImg">
+                    <img class="w-100" src="./img/shopTpMiramar.jpg">
+                </div>
+                <!-- -----------------門市資訊 -->
+                <div class="shopInfoBox col">
+                    <div class="shopInfo">
+                        <h3 class="shopName">3-美麗華餐廳Miramar Restaurant</h3>
+                        <p class="shopAdd">台北市中山區敬業三路22號(美麗華百樂園購物中心2樓)2F, No. 22, Jingye 3rd Road, Zhongshan District, Taipei City (Miramar Entertainment Park 2F)</p>
+                        <!-- -----------------訂位日期時間 -->
+                        <div class="bookDT">
+                            <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                            <div class="btnBox d-flex">
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:45</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:00</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:15</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">...</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- ====================門市4====================-->
+            <div class="row aboutShop">
+                <!-- -----------------圖片 -->
+                <div class="shopImg">
+                    <img class="w-100" src="./img/shopTpHsiMen.jpg">
+                </div>
+                <!-- -----------------門市資訊 -->
+                <div class="shopInfoBox col">
+                    <div class="shopInfo">
+                        <h3 class="shopName">4-西門餐廳Hsi-men Restaurant</h3>
+                        <p class="shopAdd">台北市武昌街二段72號2樓 No. 72, Section 2, Wuchang St, Wanhua District, Taipei City</p>
+                        <!-- -----------------訂位日期時間 -->
+                        <div class="bookDT">
+                            <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                            <div class="btnBox d-flex">
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:45</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:00</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:15</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">...</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- ====================門市5====================-->
+            <div class="row aboutShop">
+                <!-- -----------------圖片 -->
+                <div class="shopImg">
+                    <img class="w-100" src="./img/shopTpGlobal.jpg">
+                </div>
+                <!-- -----------------門市資訊 -->
+                <div class="shopInfoBox col">
+                    <div class="shopInfo">
+                        <h3 class="shopName">5-環球餐廳Global Mall Restaurant</h3>
+                        <p class="shopAdd">新北市中和區中山路3段122號4樓(環球購物中心4樓)4F, No. 122, Section 3, Zhongshan Road, Zhonghe District, New Taipei City</p>
+                        <!-- -----------------訂位日期時間 -->
+                        <div class="bookDT">
+                            <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                            <div class="btnBox d-flex">
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">11:45</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:00</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:15</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">8/8</p>
+                                    <p class="m-0">12:30</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                                <button class="me-1">
+                                    <p class="m-0">...</p>
+                                </button>
+                                <!-- ------------------------------------ -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+
+            <!-- ========================隱藏門市=========================-->
+
+            <!-- =================隱藏門市1(6)================-->
+            <div class="row pb-0 someboxHiddem" style="display:none;">
+                <div class="row aboutShop ms-0 dfHidden">
+                    <!-- -----------------圖片 -->
+                    <div class="shopImg">
+                        <img class="w-100" src="./img/shopTainan.jpg">
+                    </div>
+                    <!-- -----------------門市資訊 -->
+                    <div class="shopInfoBox col">
+                        <div class="shopInfo">
+                            <h3 class="shopName">6-新光三越新天地本館</h3>
+                            <p class="shopAdd">新光三越台南新天地本館6樓 6F., No. 658, Sec. 1, Ximen Road, West Central Dist., Tainan City</p>
+                            <!-- -----------------訂位日期時間 -->
+                            <div class="bookDT">
+                                <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                                <div class="btnBox d-flex">
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:45</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:00</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:15</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">...</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- =================隱藏門市2(7)================-->
+            <div class="row pb-0 someboxHiddem" style="display:none;">
+                <div class="row aboutShop ms-0 dfHidden">
+                    <!-- -----------------圖片 -->
+                    <div class="shopImg">
+                        <img class="w-100" src="./img/shopTainan.jpg">
+                    </div>
+                    <!-- -----------------門市資訊 -->
+                    <div class="shopInfoBox col">
+                        <div class="shopInfo">
+                            <h3 class="shopName">7-新光三越新天地本館</h3>
+                            <p class="shopAdd">新光三越台南新天地本館6樓 6F., No. 658, Sec. 1, Ximen Road, West Central Dist., Tainan City</p>
+                            <!-- -----------------訂位日期時間 -->
+                            <div class="bookDT">
+                                <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                                <div class="btnBox d-flex">
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:45</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:00</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:15</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">...</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- =================隱藏門市3(8)================-->
+            <div class="row pb-0 someboxHiddem" style="display:none;">
+                <div class="row aboutShop ms-0 dfHidden">
+                    <!-- -----------------圖片 -->
+                    <div class="shopImg">
+                        <img class="w-100" src="./img/shopTainan.jpg">
+                    </div>
+                    <!-- -----------------門市資訊 -->
+                    <div class="shopInfoBox col">
+                        <div class="shopInfo">
+                            <h3 class="shopName">8-新光三越新天地本館</h3>
+                            <p class="shopAdd">新光三越台南新天地本館6樓 6F., No. 658, Sec. 1, Ximen Road, West Central Dist., Tainan City</p>
+                            <!-- -----------------訂位日期時間 -->
+                            <div class="bookDT">
+                                <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                                <div class="btnBox d-flex">
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:45</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:00</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:15</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">...</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- =================隱藏門市4(9)================-->
+            <div class="row pb-0 someboxHiddem" style="display:none;">
+                <div class="row aboutShop ms-0 dfHidden">
+                    <!-- -----------------圖片 -->
+                    <div class="shopImg">
+                        <img class="w-100" src="./img/shopTainan.jpg">
+                    </div>
+                    <!-- -----------------門市資訊 -->
+                    <div class="shopInfoBox col">
+                        <div class="shopInfo">
+                            <h3 class="shopName">9-新光三越新天地本館</h3>
+                            <p class="shopAdd">新光三越台南新天地本館6樓 6F., No. 658, Sec. 1, Ximen Road, West Central Dist., Tainan City</p>
+                            <!-- -----------------訂位日期時間 -->
+                            <div class="bookDT">
+                                <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                                <div class="btnBox d-flex">
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:45</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:00</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:15</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">...</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- =================隱藏門市5(10)================-->
+            <div class="row pb-0 someboxHiddem" style="display:none;">
+                <div class="row aboutShop ms-0 dfHidden">
+                    <!-- -----------------圖片 -->
+                    <div class="shopImg">
+                        <img class="w-100" src="./img/shopTainan.jpg">
+                    </div>
+                    <!-- -----------------門市資訊 -->
+                    <div class="shopInfoBox col">
+                        <div class="shopInfo">
+                            <h3 class="shopName">10-新光三越新天地本館</h3>
+                            <p class="shopAdd">新光三越台南新天地本館6樓 6F., No. 658, Sec. 1, Ximen Road, West Central Dist., Tainan City</p>
+                            <!-- -----------------訂位日期時間 -->
+                            <div class="bookDT">
+                                <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                                <div class="btnBox d-flex">
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:45</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:00</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:15</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">...</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- =================隱藏門市6(11)================-->
+            <div class="row pb-0 someboxHiddem" style="display:none;">
+                <div class="row aboutShop ms-0 dfHidden">
+                    <!-- -----------------圖片 -->
+                    <div class="shopImg">
+                        <img class="w-100" src="./img/shopTainan.jpg">
+                    </div>
+                    <!-- -----------------門市資訊 -->
+                    <div class="shopInfoBox col">
+                        <div class="shopInfo">
+                            <h3 class="shopName">11-新光三越新天地本館</h3>
+                            <p class="shopAdd">新光三越台南新天地本館6樓 6F., No. 658, Sec. 1, Ximen Road, West Central Dist., Tainan City</p>
+                            <!-- -----------------訂位日期時間 -->
+                            <div class="bookDT">
+                                <p class="theWarning m-0 mt-2 mb-2">訂位人數請勿超過8人</p>
+                                <div class="btnBox d-flex">
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">11:45</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:00</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:15</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">8/8</p>
+                                        <p class="m-0">12:30</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                    <button class="me-1">
+                                        <p class="m-0">...</p>
+                                    </button>
+                                    <!-- ------------------------------------ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row2 -->
+            <!-- =========================================================-->
+
+            <div class="row moreShopsAndInfo pb-4 pt-4">
+                <button class="mb-2 justify-content-center align-items-center" id="showMoreShop">展開鄰近3間分店
+                    <span class="material-icons">expand_more</span>
+                    <!-- <img src="./img/icon_down.jpg" alt=""> -->
+                </button>
+                <p class="p-0 mb-2">歡迎使用 TGI FRIDAYS 線上訂位管家。</p>
+                <p class="p-0 m-0">每家分店可訂位時間有所差異，以各分店顯示資訊為準。</p>
+            </div>
+
+            <!-- =========================================================-->
+            <!-- 品牌菜單 -->
+            <div class="row menuInfo pb-4 pt-4">
+                <!-- ---------------------------- -->
+                <h4 class="ps-0 pe-0">菜單</h4>
+                <select class="mt-2 mb-4" name="menu" id="theMenu">
+                    <option value="品牌菜單" selected>品牌菜單</option>
+                    <option value="台南新天地本館">台南新天地本館</option>
+                    <option value="夢時代餐廳">夢時代餐廳</option>
+                    <option value="美麗華餐廳">美麗華餐廳</option>
+                    <option value="西門餐廳">西門餐廳</option>
+                    <option value="環球餐廳">環球餐廳</option>
+                </select>
+                <!-- ---------------------------- -->
+                <div class="btnLeftRight">
+                    <button  id="btnLeft">
+                        <img class="w-100" src="./img/icon_left.jpg">
+                    </button>
+                    <button  id="btnRight">
+                        <img class="w-100" src="./img/icon_right.jpg">
+                    </button>
+                </div>
+                <!-- ---------------------------- -->
+                <div class="menuBgBox m-0 p-0">   <!-- 用來作定位-- -->
+                    <div class="menuImgBox">      <!-- 用來放圖片-- -->
+                        <img class="imgOfMenuImgBox" src="./img/menu001.jpg">
+                        <img class="imgOfMenuImgBox" src="./img/menu002.jpg">
+                        <img class="imgOfMenuImgBox" src="./img/menu004.jpg">
+                        <img class="imgOfMenuImgBox" src="./img/menu005.jpg">
+                        <img class="imgOfMenuImgBox" src="./img/menu006.jpg">
+                        <img class="imgOfMenuImgBox" src="./img/menu007.jpg">
+                        <img class="imgOfMenuImgBox" src="./img/menu008.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- container-fluid -->
+    </div> <!-- section3 -->
+
+    <!-- ---------------------------------------section4 -->
+    <div class="section section4" id="zoomInMenu">
+        <!-- ===== x按鈕 ===== -->
+        <div class="container-fluid theContainer theContainer1">
+            <div class="row row1">
+                <div class="col-12 d-flex justify-content-end p-0">
+                    <button id="closeBtn">X</button>
+                </div>                
+            </div>
+        </div>
+        <!-- ==== Menu圖片 ==== -->
+        <div class="container-fluid theContainer theContainer2">
+            <div class="pupUpBox row row2">
+                <div class="col-12 p-0"><img class="w-100" src="./img/menu001.jpg"></div>
+                <div class="col-12 p-0"><img class="w-100" src="./img/menu003.jpg"></div>
+                <div class="col-12 p-0"><img class="w-100" src="./img/menu004.jpg"></div>
+                <div class="col-12 p-0"><img class="w-100" src="./img/menu005.jpg"></div>
+                <div class="col-12 p-0"><img class="w-100" src="./img/menu006.jpg"></div>
+                <div class="col-12 p-0"><img class="w-100" src="./img/menu007.jpg"></div>
+                <div class="col-12 p-0"><img class="w-100" src="./img/menu008.jpg"></div>
+            </div>
+        </div> 
+        <!-- ================== -->        
+    </div> <!-- section4 -->
+    <!-- -----------------------------------------footer -->
+    <footer>
+        <div class="container-fluid mt-4">
+            <p class="m-0 p-0 pt-5 pb-2">Copyright © 2021 inline Ltd. All Rights Reserved</p>
+            <p class="m-0 p-0 pb-5"><a><span>Terms of Use</span></a> / <a><span> Privacy Policy </span></a> Powered by <a><span> inline </span></a> Version 7.30.11</p>
+        </div>
+    </footer>
+    <!-- --------------------------- -->
+    <!-- --------------------------- -->
+    <!-- --------------------------- -->
+    <script src="js/booking.js"></script>
+</body>
+</html>

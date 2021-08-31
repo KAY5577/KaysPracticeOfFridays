@@ -1,0 +1,147 @@
+/* ----------------------------headerNav */
+nav div.menuBox ul li a.PageContact{
+    color:rgb(224, 16, 16) !important;
+}
+ /* ----------------------------section1 */
+div.section{
+    width:100%;
+}
+div.section h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(224, 16, 16);
+    padding:15px 0;
+    margin:0;
+}
+div.section1 div.theContainer div.row div.allQuestions div.QandA{
+    overflow: hidden;
+}
+div.section1 div.theContainer div.row div.allQuestions div.QandA:first-child{
+    border-radius: 7px 7px 0 0;
+}
+div.section1 div.theContainer div.row div.allQuestions div.QandA:last-child{
+    border-radius: 0 0 7px 7px;
+}
+/* =========================== */
+div.section1 div.theContainer div.row div.allQuestions div.QandA{
+    background-color: #fff;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.25);
+    margin-top:0;
+    margin-bottom:0;
+    border-radius: 0;
+}
+/* =========================== */
+div.section1 div.theContainer div.row div.allQuestions div.QandA div.theQuestion{
+    background-color: #fff;
+}
+div.section1 div.theContainer div.row div.allQuestions div.QandA div.theQuestion h4{
+    font-size: 1rem;
+    line-height: 1.1;
+    cursor: pointer;
+}
+div.section1 div.theContainer div.row div.allQuestions div.QandA div.theQuestion img.btnOnOff{
+    width:15px;
+    height:15px;
+    border-radius: 35%;
+}
+div.section1 div.theContainer div.row div.allQuestions div.QandA div.theAns{
+    font-size: 0.9rem;
+    line-height: 1.4;
+    list-style-position:inside;
+    display:none;
+}
+/* ----------------------------section2 */
+div.section2 div.theContainer form.row {
+    max-width: 1000px;
+}
+div.section2 div.theContainer form.row div.theDiv{
+    height:80px;
+    display:flex;
+    align-items: flex-end;
+}
+div.section2 div.theContainer form.row div.theDiv:last-child{
+    height:70px;
+    display:flex;
+    align-items: flex-end;
+}
+div.section2 div.theContainer form.row div.theDiv:nth-child(6),
+div.section2 div.theContainer form.row div.theDiv:nth-child(7),
+div.section2 div.theContainer form.row div.theDiv:nth-child(8),
+div.section2 div.theContainer form.row div.theDiv:nth-child(9),
+div.section2 div.theContainer form.row div.theDiv:nth-child(10),
+div.section2 div.theContainer form.row div.theDiv:nth-child(11),
+div.section2 div.theContainer form.row div.theDiv:nth-child(12){
+    display:none;
+}
+div.section2 div.theContainer form.row div.theDiv:last-child input{
+    height:45px;
+    background-color: #ddd;
+    border:1px solid #ddd;
+    border-radius: 7px;
+}
+div.section2 div.theContainer form.row div.theDiv:nth-last-child(2){
+    height:160px;
+}
+/* ----------- fieldset & legend*/
+fieldset.theFieldest {
+    border: 1px solid #bbb;
+    padding: 0 0 0 1rem;
+    height:55px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin:0;
+    display:flex;
+    align-items: center;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+legend.theLegend{
+    font-size: 0.75em;
+    font-weight: 500;
+    text-align: left;
+    border:none;
+    width:100px;
+    display:none;
+    padding-left:10px;
+    margin:0;
+    color:#222;
+}
+fieldset.theTextarea{
+    height:135px;
+    align-items: flex-start;
+    border:1px solid #aaa;
+    outline: none;
+    padding:1rem;
+    font-size:0.9rem;
+}
+textarea.theKeyInPlace{
+    color:#777;
+    border:1px solid #fff;
+    outline: none;
+}
+/* ---------------------------- */
+div.section2 div.theContainer form.row input,
+div.section2 div.theContainer form.row select{
+    height:80%;
+    border:1px solid #fff;
+    outline: none;
+    padding:0.75rem 0.75rem 0.75rem 0;
+    font-size:0.9rem;
+    color: #777;
+}
+div.section2 div.theContainer form.row input::placeholder{
+    color: #777;
+}
+div.section2 div.theContainer form.row select{
+    line-height: 1;
+    height:100%;
+}
+.changePlaceHolderColor::placeholder{
+    color:rgb(224, 16, 16) !important;
+}
+.changeColor{
+    color:rgb(224, 16, 16) !important;
+}
+.changeBorderColor{
+    border:2px solid rgb(224, 16, 16) !important;
+}

@@ -1,0 +1,531 @@
+/* -----------------------------------header */
+header div.container-fluid{
+    background-color: rgba(253, 253, 253, .85);
+    border-bottom:1px solid #ccc;
+    position:fixed;
+    z-index:1;
+}
+div.theLang{
+    width:100px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    border-left:1px solid #ccc;
+    cursor:pointer;
+}
+div.theLang img{
+    width:15px;
+}
+div.langBox{
+    z-index:5;
+    position:absolute;
+    top:80px;
+    right:10px;
+    width:140px;
+    height:110px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    padding:10px 0;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.65);
+    display:none;
+}
+div.langItem{
+    height:calc((110px - (10px *2))/2);
+    line-height: calc((110px - (10px *2))/2);
+}
+div.langItem:hover{
+    background-color: #FF850E;
+    color:#fff;
+}
+.showMe{
+    display:block !important;
+}
+/* ----------------------------------banner */
+/* banner 輪播圖片------ */
+div.banner{
+    padding-top: 60px;
+    background-color: #fff;
+}
+div.banner div.row{
+    margin:30px auto;
+    max-width:1150px;
+    position:relative;
+}
+div.banner div.theContainer div.row div.showImgBox{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    padding:0;
+}
+div.banner div.row div.showImgBox div.imgBox{
+    width:100%;
+    height:100%;
+    padding:0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position:relative;
+    left:0%;
+} 
+div.banner div.row div.showImgBox div.imgBox img{
+    width:100%;
+    height:100%;
+    min-width:100%;
+    min-height:100%;
+} 
+/* banner 輪播按鈕------ */
+div.banner div.theContainer div.bannerBtnBox{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+div.banner div.theContainer div.bannerBtnBox div.bannerBtn{
+    width:23px;
+    height:5px;
+    background-color: #bbb;
+    box-shadow:1px 1px 1px 0px rgba(0,0,0,0.99);
+    margin:15px 9px;
+    cursor: pointer;
+}
+div.banner div.theContainer div.bannerBtnBox div.bannerBtn:first-child{
+    background-color: #fff;
+}
+/* -----------------------------banner(RWD) */
+@media screen and (min-width:992px) and (max-width:1200px){
+    div.banner div.theContainer{
+        margin:30px auto;
+        padding:0;
+    }
+    div.banner div.theContainer div.row{
+        margin:0 30px;
+        max-width:100%;
+    }
+}
+@media screen and (max-width:992px){
+    div.banner div.theContainer{
+        margin:0 auto;
+        padding:0;
+    }
+    div.banner div.theContainer div.row{
+        margin:0 auto;
+        width:100%;
+    }
+}
+/* --------------------------------section1 */
+div.section1 div.theContainer div.row{
+    margin:0 auto;
+    padding:0 0 15px 0;
+    max-width:1150px;
+    border-bottom: 1px solid #ccc;;
+}
+div.section1 div.theContainer div.row div.col-12 h1{
+    /* font-size:36px; */
+    font-size:2.25rem;
+    font-weight: 900;
+    margin:5px 0;
+}
+div.section1 div.theContainer div.row div.col-12 p{
+    margin:5px 0;
+}
+/* ---------------------------section1(RWD) */
+@media screen and (min-width:992px) and (max-width:1200px){
+    div.section1 div.theContainer{
+        padding:0;
+    }
+    div.section1 div.theContainer div.row{
+            margin:0 30px;
+            max-width:100%;
+    }
+}
+@media screen and (max-width:992px){
+    div.section1 div.theContainer{
+        padding:0;
+        border-bottom: 1px solid #ccc;
+    }
+    div.section1 div.theContainer div.row{
+            margin:0 15px;
+            max-width:100%;
+            border-bottom: hidden;
+    }
+}
+/* --------------------------------section2 */
+div.section2>div.theContainer>div.row{
+    margin:0 auto;
+    padding:0 0 15px 0;
+    max-width:1150px;
+}
+div.section2 div.theContainer div.row select.personQty{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    width:95%;
+    height:40px;
+    padding:0 7px;
+}
+div.section2 div.theContainer div.row input.theDate{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    width:100%;
+    height:40px;
+    padding:0 7px;
+}
+div.section2 div.theContainer div.row p.theWarning{
+    font-size: 0.85rem;
+}
+/* ---------------------------section2(RWD) */
+@media screen and (min-width:992px) and (max-width:1200px){
+    div.section2>div.theContainer>div.row{
+            margin:0 30px;
+            max-width:100%;
+    }
+}
+@media screen and (max-width:992px){
+    div.section2>div.theContainer>div.row{
+            margin:0 15px;
+    }
+    div.section2 div.theContainer div.row select.personQty{
+        width:calc(100% - 5px);
+    }
+    div.section2 div.theContainer div.row select.personQty1{
+        margin:0 5px 0 0;
+    }
+    div.section2 div.theContainer div.row select.personQty2{
+        margin:0 0 0 5px;
+    }
+}
+/* --------------------------------section3 */
+div.section3>div.theContainer>div.row{
+    margin:0 auto;
+    padding:0 0 15px 0;
+    max-width:1150px;
+}
+/* <!-- 時間區段 --> */
+div.section3>div.theContainer>div.row>.DivSlectTimeBlock{
+    border-bottom:1px solid #aaa;
+}
+div.section3>div.theContainer>div.row>.DivSlectTimeBlock button{
+    width:125px;
+    height:37spx;
+    background-color: #fff;
+    border:1px solid #fff;
+    vertical-align: bottom;
+}
+div.section3>div.theContainer>div.row>.DivSlectTimeBlock button:first-child{
+    color:#FF850E;
+    border-bottom:3px solid #FF850E;
+}
+div.section3>div.theContainer>div.row>.DivshowTimeBlock p.theTimeArea{
+    width:125px;
+    margin:0 2px;
+    text-align: center;
+    font-size: 0.8rem;
+    color:#fff;
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    div.section3>div.theContainer>div.row{
+        margin:0 30px;
+        max-width:100%;
+    }
+}
+@media screen and (max-width:992px){
+    div.section3>div.theContainer>div.row{
+        margin:0;
+    }
+    div.section3>div.theContainer>div.row>.DivSlectTimeBlock button,
+    div.section3>div.theContainer>div.row>.DivshowTimeBlock p.theTimeArea{
+        width:20%;
+    }
+}
+/* <!-- 訂位門市 日期 時間 --> */
+div.section3 div.theContainer div.aboutShop{
+    padding:23px 0;
+    border-bottom: 1px solid #aaa;
+}
+div.section3 div.theContainer div.aboutShop:hover{
+    background-color: #eee;
+    cursor:pointer;
+}
+div.section3 div.theContainer div.aboutShop div.shopInfoBox{
+    padding-right:0;
+}
+div.section3 div.theContainer div.row div.shopImg{
+    width:280px;
+    height:180px;
+    padding:0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+div.section3 div.theContainer div.row div.shopInfo .shopName{
+    color:#222;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+div.section3 div.theContainer div.row div.shopInfo .shopAdd{
+    color:#aaa;
+    font-size: 1rem;
+    font-weight: 500;
+    margin:0.5rem 0 0 0;
+}
+div.section3 div.theContainer div.row div.shopInfo div.bookDT p.theWarning{
+    color:red;
+    font-size: 1rem;
+    font-weight: 500;
+}
+div.section3 div.theContainer div.row div.shopInfo div.bookDT button{
+    width:88px;
+    height:40px;
+    border-radius: 5px;
+    overflow: hidden;
+    border:1px solid #FF850E;
+}
+/* ----日期與時間按鈕 */
+div.section3 div.theContainer div.row div.shopInfo div.bookDT button p:nth-child(1){
+    height:calc(40px * 0.45);
+    line-height: calc(40px * 0.45);
+    font-size:0.7rem;
+    font-weight: 900;
+    background-color: #FF850E;
+    border:1px solid #FF850E;
+    color:#fff;
+}
+div.section3 div.theContainer div.row div.shopInfo div.bookDT button p:nth-child(2){
+    height:calc(40px * 0.55);
+    line-height: calc(40px * 0.55);
+    font-size:0.88rem;
+    font-weight: 900;
+    background-color: #FF850E;
+    border:1px solid #FF850E;
+    color:#fff;
+}
+/* ----最後一個...按鈕 */
+div.section3 div.theContainer div.row div.shopInfo div.bookDT button:last-child{
+    width:40px;
+    height:40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+div.section3 div.theContainer div.row div.shopInfo div.bookDT button:last-child p{
+    height:40px;
+    line-height: 20px;
+    font-size:1.5rem;
+    font-weight: 900;
+    background-color: #FF850E;
+    color:#fff;
+}
+@media screen and (max-width:992px){
+    div.section3 div.theContainer div.aboutShop{
+        overflow: hidden;
+        margin:0;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    div.section3 div.theContainer div.row div.shopImg{
+        width:88px;
+        height:88px;
+    }
+    div.section3 div.theContainer div.row div.shopImg img{
+        width:100%;
+        height:100%;
+    }
+}
+@media screen and (min-width:830px) and (max-width:992px){
+    div.section3 div.theContainer div.row div.shopInfo{
+        position:relative;
+        margin-bottom:111px;
+    }
+    div.section3 div.theContainer div.row div.bookDT{
+        position:absolute;
+        top:150%;
+        left:-101px;
+    }
+}
+@media screen and (max-width:830px){
+    div.section3 div.theContainer div.row div.shopInfo{
+        position:relative;
+        margin-bottom:85px;
+    }
+    div.section3 div.theContainer div.row div.bookDT{
+        position:absolute;
+        top:100%;
+        left:-101px;
+    }
+}
+/* ----更多門市區...按鈕 */
+div.moreShopsAndInfo{
+    border-bottom: 1px solid #aaa;
+}
+div.moreShopsAndInfo button#showMoreShop{
+    height:50px;
+    line-height: 50px;
+    font-weight: 500;
+    background-color: #FF850E;
+    border:2px solid #FF850E;
+    color:#fff;
+    border-radius: 5px;
+    display:flex;
+}
+div.moreShopsAndInfo button#showMoreShop img{
+    width:15px;
+    height:15px;
+    margin-left:5px;
+}
+div.moreShopsAndInfo p{
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+@media screen and (max-width:992px){
+    div.moreShopsAndInfo{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+}
+/* -----------品牌菜單 */
+/* h4菜單標題 */
+div.menuInfo{
+    border-bottom: 1px solid #aaa;
+    position:relative;
+}
+div.menuInfo select{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    width:50%;
+    height:40px;
+    padding:0 7px;
+}
+/* 菜單圖片區 */
+div.menuInfo div.btnLeftRight button{
+    z-index:2;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    overflow: hidden;
+    position:absolute;
+    bottom:calc((400px + 24px) / 2);
+    transform: translateY(50%);
+    border:1px solid #ddd;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.35);
+}
+div.menuInfo div.btnLeftRight button img{
+    width:100%;
+}
+div.menuInfo div.btnLeftRight button:first-child{
+    left:-20px;
+}
+div.menuInfo div.btnLeftRight button:last-child{
+    right:-20px;
+    display:none;
+}
+div.menuInfo div.menuBgBox{
+    position:relative;
+    height:400px;
+    overflow: hidden;
+}
+div.menuInfo div.menuBgBox div.menuImgBox{
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position:absolute;
+    top:0;
+    left:0;
+    /* left:calc(-1 * (466.56px + 10px)); */
+}
+div.menuInfo div.menuBgBox div.menuImgBox img:not(:last-child){
+    margin-right:10px;
+}
+@media screen and (max-width:992px){
+    div.menuInfo{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+    div.menuInfo div.btnLeftRight button{
+        display:none;
+    }
+}
+@media screen and (max-width:640px){
+    div.menuInfo div.menuBgBox{
+        position:relative;
+        height:250px;
+        overflow: hidden;
+    }
+}
+/* -----------------------------sectiion4 */
+div.section4{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    display:none;
+}
+div.section4 div.theContainer1{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border:2
+}
+div.section4 div.theContainer2{
+    width:100%;
+    background-color: rgba(0,0,0,0.35);
+    position:relative;
+    margin:0 auto;
+}
+div.section4 div.theContainer2 div.pupUpBox{
+    max-width:1080px;
+    border-radius: 5px; 
+}
+/* -------設置x按鈕------- */
+div.section4 div.theContainer1 div.row1{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:3;
+    padding:1rem 1.5rem 1rem 1rem;
+
+}
+div.section4 div.theContainer1 div.row1 button{
+    width:40px;
+    height:40px;
+    color:#fff;
+    background-color:rgba(0,0,0,0.7);
+    border:2px solid #eee;
+    border-radius: 3.5px;
+}
+@media screen and (max-width:992px){
+    div.section4 div.theContainer1 div.row1 button{
+        right:0;
+    }
+}
+/* -------設置Menu圖片------- */
+div.section4 div.theContainer2{
+    width:100%;
+    background-color:rgba(0,0,0,0.65);
+    padding:0 auto 0 auto;
+}
+div.section4 div.theContainer2 div.row2{
+    max-width:1080px;
+    margin:0 auto;
+}
+@media screen and (max-width:992px){
+    div.section4 div.theContainer2{
+        padding:0;
+    }
+}
+/* --------------------------------footer */
+footer{
+    background-color: #eee;
+}
+footer p{
+    text-align: center;
+    font-size: 0.85rem;
+    color:#777;
+    font-weight: 500;
+}
+footer p a{
+    cursor: pointer;
+}
+footer p a span{
+    color:#FF850E;
+    font-weight: 600;
+}

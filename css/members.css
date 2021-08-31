@@ -1,0 +1,236 @@
+/* ---------------------------header */
+header{
+    background-color: #940b19;
+}
+div.theContainer{
+    max-width: 960px;
+}
+header div.theContainer div.row div.headerBox img{
+    height:42px;
+}
+header button{
+    height:36px;
+    background-color: #940b19;
+    border:1px solid #940b19;
+    border-radius: 3px;
+    color:#fff;
+}
+header button.theLang{
+    position:relative;
+}
+header button.theLang span.Language{
+    font-size: 1rem;
+}
+header button.theLang div.lanBox{
+    position: absolute;
+    top:100%;
+    right:0;
+    display:none;
+}
+header button.theLang div.lanBox ul{
+    width:160px;
+    color:#222;
+    background-color: #fff;
+    border:1px solid #ccc;
+    z-index:1;
+    border-radius: 5px;
+}
+header button.theLang div.lanBox ul li:hover{
+    background-color: #eee;
+}
+header button span{
+    font-size: 25px;
+}
+header button:hover{
+    background-color: #fff;
+    border:1px solid #fff;
+    color:#222;
+}
+/* -------------------------section1 */
+div.section1{
+    font-size: 1.25rem;
+    color:rgb(194, 13, 13);
+    background-color: #ddd;
+}
+div.section1 a button{
+    font-size: 1rem;
+    color:#fff;
+    background-color: #940b19;
+    border:1px solid #940b19;
+    border-radius: 3px;
+}
+div.section1 a button:hover{
+    background-color: #700914;
+}
+/* -------------------------section2 */
+div.section2 img{
+    height:85px;
+    width:214px;
+}
+@media screen and (max-width:576px) {
+    div.section2 div.theWelcome,
+    div.section2 h4,
+    div.section2 p{    
+        clear:both;
+    }
+}
+
+/* -------------------------section3 */
+div.section3{
+    background-image: url(../img/backgroundImg01.jpg);
+    /* background-position: center; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.section3 div.theContainer div.row div:first-child{
+    background-color: rgba(255, 255, 255, 0.85);
+}
+div.section3 h2.theTitle{
+    font-family: 'Architects Daughter', 'cursive';
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+div.section3 div.theHr{
+    width:100%;
+    height:2.5px;
+    background: linear-gradient(to right, transparent, black, transparent);
+}
+div.section3 button{
+    font-size: 1rem;
+    color:#fff;
+    border-radius: 3px;
+}
+div.section3 button.theVip{
+    background-color: #940b19;
+    border:1px solid #940b19;
+}
+div.section3 button.theVip:hover{
+    background-color: #700914;
+    border:1px solid  #700914;
+}
+div.section3 button.theNormal{
+    background-color: #444;
+    border:1px solid #444;
+}
+div.section3 button.theNormal:hover{
+    background-color: #222;
+    border:1px solid #222;
+}
+/* -------------------------section4 */
+div.section4{
+    background-color: #000;
+    color:#fff;
+}
+div.section4 h2{
+    font-size: 2rem;
+}
+div.section4 h3{
+    font-size: 1.5rem;
+}
+div.section4 p.shopRemark{
+    font-size: 0.75rem;
+}
+div.section4 img{
+    width:150px;
+}
+@media screen and (max-width:240px) {
+    div.section4 img{
+        width:100%;
+    }
+}
+/* -------------------------section5 */
+div.section5 div.theMemberCard{
+    background-color: #ddd;
+}
+div.section5 h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+div.section5 p{
+    font-size: 1.5rem;
+    /* line-height: 1.5rem; */
+    font-weight: 400;
+}
+div.section5 button{
+    border-radius: 3px;
+}
+div.section5 ul li{
+    line-height: 1.4;
+}
+div.section5 div.CardHeader{
+    color:#fff;
+}
+div.section5 div.theContainer div.row div.MemberBox:first-child div.CardHeader{
+    background-color: #940b19;
+}
+div.section5 div.theContainer div.row div.MemberBox:first-child button{
+    background-color: #940b19;
+    border:1px solid #940b19;
+    color:#fff;
+    position:relative;
+}
+div.section5 div.theContainer div.row div.MemberBox:first-child button div#CurrencyBox{
+    position:absolute;
+    top:100%;
+    right:0;
+}
+div.section5 div.theContainer div.row div.MemberBox:first-child button div#CurrencyBox{
+    width:160px;
+    color:#222;
+    background-color: #fff;
+    border:1px solid #ccc;
+    z-index:1;
+    border-radius: 5px;
+    display:none;
+}
+div.section5 div.theContainer div.row div.MemberBox:first-child button div#CurrencyBox ul li:hover{
+    background-color: #eee;
+}
+button#theVipBtn{
+    border:1px solid #fff;
+    font-size: 1rem;
+}
+div.section5 div.theContainer div.row div.MemberBox:first-child button:hover{
+    background-color: #700914;
+}
+div.section5 div.theContainer div.row div.MemberBox:last-child div.CardHeader{
+    background-color: #222;
+}
+div.section5 div.theContainer div.row div.MemberBox:last-child button{
+    background-color: #444;
+    border:1px solid #444;
+    color:#fff;
+}
+div.section5 div.theContainer div.row div.MemberBox:last-child button:hover{
+    background-color: #222;
+}
+.boldRed{
+    color:#940b19;
+    font-weight: 600;
+} 
+/* -------------------------section6 */
+div.section6{
+    background-color: #940b19;
+    color:#fff;
+}
+/* -------------------------section6 */
+div.section7{
+    color:#940b19;
+}
+/* ----------------------------footer */
+footer{
+    color:#fff;
+    background-color: #222;
+} 
+footer ul li a{
+    font-weight:500;
+    color: white;
+    cursor:pointer;
+}
+footer ul li a:hover{
+    color:#ddd;
+}
+footer div.row div.col-12:last-child{
+    color:#ddd;
+}

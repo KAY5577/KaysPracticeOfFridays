@@ -1,0 +1,59 @@
+/* ----------------------------headerNav */
+nav div.menuBox ul li a.PageLocation{
+    color:rgb(224, 16, 16) !important;
+}
+/* ----------------------------section */
+div.section{
+    width:100%;
+    min-height: calc(100vh - 255px);
+    /* header:100px + footer:155px = 255px */
+}
+div.section h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(24, 48, 182);
+    padding:15px;
+    margin:0;
+}
+div.locationBox{
+    border:1px solid #eee;
+    border-radius: 7px;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.35);
+}
+div.locationBox p{
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+div.locationBox h4{
+    color:rgb(224, 16, 16);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top:24px;
+    margin-bottom:8px;
+}
+div.locationBox div.buttonBox{
+    justify-content: flex-end;
+    border-top: 1px solid #aaa;
+}
+div.locationBox div.buttonBox button{
+    width:128px;
+    height:40px;
+    border-radius: 7px;
+    background-color: #222;
+    border:1px solid #222;
+    color:#fff;
+    margin-left: 10px;
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.35);
+}
+@media screen and (max-width:576px){
+    div.locationBox div.buttonBox{
+        flex-direction: column;
+    }
+    div.locationBox div.buttonBox button{
+        width:100%;
+        margin-left: 0;
+    }
+    div.locationBox div.buttonBox a:nth-child(2){
+        margin:10px 0;
+    }
+}

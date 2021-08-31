@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/location.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>location</title>
+</head>
+<body>
+    <!-- -----------------------------------------nav -->
+    <nav id="theNav"></nav>
+    <!-- ---------------------------allShops--section -->
+    <div class="allShops">
+        <div class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion" id="myAccordion">  <!-- ### 設置手風琴效果區塊 ### -->
+                            <h1>大台北</h1>
+                            <!-- =================================== -->
+                            <!-- =================================== -->
+                            <div class="accordion-item">
+                                <!-- ### 手風琴內的標題 ### -->
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                        美麗華餐廳</button>
+                                </h2>
+                                <!-- ### 手風琴標題裡內容 ### -->
+                                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="accordion-body p-0">
+                                        <div class="row m-0 p-0 p-4 locationBox">
+                                            <div class="col-12 col-sm-7 p-0 mb-4 pe-3">
+                                                <h1 class="p-0 pb-4" style="color:rgb(224, 16, 16);">美麗華餐廳</h1>
+                                                <p>台北市中山區敬業三路22號2樓 （美麗華百樂園購物中心本館2樓）</p>
+                                                <p>(02) 2175-3358</p>
+                                                <h4>營業時間</h4>
+                                                <p>星期一~星期日 11:00~22:00</p>
+                                                <p>營業結束前半小時停止供餐</p>
+                                                <h4>交通資訊</h4>
+                                                <p>捷運 一 劍南路站3號出口，沿著敬業三路往樂群三路方向走，美麗華百樂園購物中心本館2樓。</p>
+                                                <h4>停車資訊</h4>
+                                                <p>附設美麗華百樂園停車場，憑店內消費發票，可折抵停車3小時。</p>
+                                            </div>
+                                            <div class="col-12 col-sm-5 p-0 mb-4">
+                                                <img class="w-100" src="./img/shopTpMiramar.jpg">
+                                            </div>
+                                            <div class="col-12 p-0 pt-4 mb-0 d-flex buttonBox">
+                                                <a href="#"><button>地圖開放</button></a>
+                                                <a href="#"><button>電話預約</button></a>
+                                                <a href="#"><button>線上訂位</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =================================== -->
+                            <!-- =================================== -->
+                            <div class="accordion-item">
+                                <!-- ### 手風琴內的標題 ### -->
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                        西門餐廳</button>
+                                </h2>
+                                <!-- ### 手風琴標題裡內容 ### -->
+                                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="accordion-body p-0">
+                                        <div class="row m-0 p-0 p-4 locationBox">
+                                            <div class="col-12 col-sm-7 p-0 mb-4 pe-3">
+                                                <h1 class="p-0 pb-4" style="color:rgb(224, 16, 16);">西門餐廳</h1>
+                                                <p>台北市武昌街二段72號2樓</p>
+                                                <p>(02) 2388-0679</p>
+                                                <h4>營業時間</h4>
+                                                <p>星期一~星期日 12:00~20:00</p>
+                                                <p>20:00提供最終點餐供餐服務</p>
+                                                <h4>交通資訊</h4>
+                                                <p>捷運 一 西門站6號出口，往北走漢中街朝峨嵋街6巷前進，於武昌街二段看到屈臣氏時左轉走約150公尺，過西寧南路後西門餐廳即在您的左手邊。</p>
+                                                <h4>停車資訊</h4>
+                                                <p>周邊付費停車場－峨嵋停車場、洛陽停車場。</p>
+                                            </div>
+                                            <div class="col-12 col-sm-5 p-0 mb-4">
+                                                <img class="w-100" src="./img/shopTpHsiMen.jpg">
+                                            </div>
+                                            <div class="col-12 p-0 pt-4 mb-0 d-flex buttonBox">
+                                                <a href="#"><button>地圖開放</button></a>
+                                                <a href="#"><button>電話預約</button></a>
+                                                <a href="#"><button>線上訂位</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =================================== -->
+                            <!-- =================================== -->
+                            <div class="accordion-item">
+                                <!-- ### 手風琴內的標題 ### -->
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                        環球餐廳</button>
+                                </h2>
+                                <!-- ### 手風琴標題裡內容 ### -->
+                                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="accordion-body p-0">
+                                        <div class="row m-0 p-0 p-4 locationBox">
+                                            <div class="col-12 col-sm-7 p-0 mb-4 pe-3">
+                                                <h1 class="p-0 pb-4" style="color:rgb(224, 16, 16);">環球餐廳</h1>
+                                                <p>新北市中和區中山路3段122號4樓 （環球購物中心4樓）</p>
+                                                <p>(02) 2225-3578</p>
+                                                <h4>營業時間</h4>
+                                                <p>星期一~星期日 11:00~22:00</p>
+                                                <p>營業結束前半小時停止供餐</p>
+                                                <h4>交通資訊</h4>
+                                                <p>直達接駁車（新埔線）一 Global Mall新北中和 → 正隆廣場站 → 捷運新埔站3號出口 → 捷運新埔站1號出口 → 馥華飯店站 → Global Mall新北中和</p>
+                                                <p>直達接駁車（景安線）一 Global Mall新北中和 → 環球金采產後護理之家站 → 美麗時代站 → 中和市公所站 → 捷運景安站 → 遠東世紀廣場站</p>
+                                                <p>直達接駁車（板橋線）一 Global Mall新北中和 → 板橋火車站西出口站 → Global Mall新北中和</p>
+                                                <h4>停車資訊</h4>
+                                                <p>附設環球購物中心中和店停車場，店內消費$1000元可折抵1小時，最多可折抵5小時</p>
+                                            </div>
+                                            <div class="col-12 col-sm-5 p-0 mb-4">
+                                                <img class="w-100" src="./img/shopTpGlobal.jpg">
+                                            </div>
+                                            <div class="col-12 p-0 pt-4 mb-0 d-flex buttonBox">
+                                                <a href="#"><button>地圖開放</button></a>
+                                                <a href="#"><button>電話預約</button></a>
+                                                <a href="#"><button>線上訂位</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =================================== -->
+                            <!-- =================================== -->
+                            <h1>台南高雄</h1>                            
+                            <div class="accordion-item">
+                                <!-- ### 手風琴內的標題 ### -->
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                        台南新天地餐廳</button>
+                                </h2>
+                                <!-- ### 手風琴標題裡內容 ### -->
+                                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="accordion-body p-0">
+                                        <div class="row m-0 p-0 p-4 locationBox">
+                                            <div class="col-12 col-sm-7 p-0 mb-4 pe-3">
+                                                <h1 class="p-0 pb-4" style="color:rgb(224, 16, 16);">台南新天地餐廳</h1>
+                                                <p>台南市中西區西門路一段658號（台南新天地本館6樓）</p>
+                                                <p>(06) 303-0279/p>
+                                                <h4>營業時間</h4>
+                                                <p>星期一~星期日 11:00~22:00</p>
+                                                <p>營業結束前一小時停止供餐</p>
+                                                <h4>交通資訊</h4>
+                                                <p>公車 一 站牌-台南永華車站，搭乘興南客運各線，下車後過西門路一段至斜對面即可抵達。(大億麗緻酒店旁)</p>
+                                                <p>高雄客運 一 搭乘台南市2號、5號、1號、18號公車往南，至「西門郵局站」下車，下車後過西門路一段至對面即可抵達。</p>
+                                                <h4>停車資訊</h4>
+                                                <p>附設台南新天地新光三越停車場，店內消費$1000元可折抵1小時，最多可折抵4小時。</p>
+                                            </div>
+                                            <div class="col-12 col-sm-5 p-0 mb-4">
+                                                <img class="w-100" src="./img/shopTainan.jpg">
+                                            </div>
+                                            <div class="col-12 p-0 pt-4 mb-0 d-flex buttonBox">
+                                                <a href="#"><button>地圖開放</button></a>
+                                                <a href="#"><button>電話預約</button></a>
+                                                <a href="#"><button>線上訂位</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =================================== -->
+                            <!-- =================================== -->
+                            <div class="accordion-item">
+                                <!-- ### 手風琴內的標題 ### -->
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                        高雄夢時代餐廳</button>
+                                </h2>
+                                <!-- ### 手風琴標題裡內容 ### -->
+                                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="accordion-body p-0">
+                                        <div class="row m-0 p-0 p-4 locationBox">
+                                            <div class="col-12 col-sm-7 p-0 mb-4 pe-3">
+                                                <h1 class="p-0 pb-4" style="color:rgb(224, 16, 16);">高雄夢時代餐廳</h1>
+                                                <p>高雄市中華五路789號3樓（夢時代購物中心3樓）</p>
+                                                <p>(07) 823-3579</p>
+                                                <h4>營業時間</h4>
+                                                <p>星期日~星期四 11:00~22:00</p>
+                                                <p>星期五~星期六 11:00~22:30</p>
+                                                <p>營業結束前一小時停止供餐</p>
+                                                <h4>交通資訊</h4>
+                                                <p>高雄捷運 一 至R6(凱旋站)轉乘輕軌C3(前鎮之星站)至C5(夢時代站)下車。</p>
+                                                <h4>停車資訊</h4>
+                                                <p>附設夢時代購物中心停車場，店內消費$500元可折抵1小時，最多可折抵6小時。</p>
+                                            </div>
+                                            <div class="col-12 col-sm-5 p-0 mb-4">
+                                                <img class="w-100" src="./img/shopKS.jpg">
+                                            </div>
+                                            <div class="col-12 p-0 pt-4 mb-0 d-flex buttonBox">
+                                                <a href="#"><button>地圖開放</button></a>
+                                                <a href="#"><button>電話預約</button></a>
+                                                <a href="#"><button>線上訂位</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =================================== -->
+                            <!-- =================================== -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- section -->
+    </div> <!-- allShops -->
+    <!-- -----------------------------------------footer -->
+    <footer id="theFooter"></footer>
+    <!-- -------------------------------------------------- -->
+    <script>
+        // import headerNav.html
+        $('#theNav').load('headerNav.html');
+        // import header.html
+        $('#theFooter').load('footer.html');
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* ---------------------------------banner */
+div.banner{
+    width:100%;
+    height:calc(100vh - 100px);
+    overflow: hidden;
+    background-image: url(../img/banner-01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+div.banner img.bgImg{
+    min-width:100%;
+    max-height:100%;
+    object-fit:cover;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+div.banner div.info a{
+    text-decoration: none;
+    color:#fff;
+    background-color: rgba(0,0,0,0.65);
+    border-radius: 7px;
+}
+div.banner div.info a h1{
+    font-size: 1.5rem;
+}
+/* === 第一屏背景圖 轉場設定 === */
+@keyframes imgFadeInOut{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+div.banner img.bgImg{
+    animation: imgFadeInOut 20s infinite;
+}
+/* ============================ */
+div.banner div.theContainer{
+    background-color: rgba(244,244,244,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+}
+div.banner div.theContainer div.slogn{
+    font-weight: bold;
+}
+div.banner div.theContainer div.slogn h2{
+    font-size: 70px;
+}
+div.banner div.theContainer div.slogn h1{
+    font-size: 90px;
+}
+
+@media screen and (max-width:992px){
+    div.banner div.theContainer div.slogn h2{
+        font-size: 42px;
+    }
+    div.banner div.theContainer div.slogn h1{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:625px){
+    div.banner div.theContainer div.slogn h2{
+        font-size: 28px;
+    }
+    div.banner div.theContainer div.slogn h1{
+        font-size: 36px;
+    }
+}
+div.banner div.theContainer div.card{
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+div.banner div.theContainer div.card a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+}
+div.banner div.theContainer div.card a h2{
+    font-size:1.5rem;
+}
+@media screen and (max-width:576px){
+    div.banner div.theContainer div.card a h2{
+        font-size:1.1rem;
+    }
+    div.banner div.theContainer div.card a p{
+        font-size:0.85rem;
+    }
+}
+
+
+
+/* ---------------------------------section */ 
+div.section{
+    text-align: center;
+}
+div.section h1.thePageTitle{
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(224, 16, 16);
+}
+div.section a{
+    box-shadow:2px 2px 7px 0px rgba(0,0,0,0.65);
+}
+div.section a:hover{
+    transform: scale(1.03);
+    transition:all 0.2s;
+}
+div.row div.theCard div.theImg img{
+    width:100%;
+    min-width:100%;
+}
+div.row div.theCard div.theInfo h1{
+    color:#222;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin:0 auto 20px auto;
+} 
+div.row div.theCard div.theInfo p{
+    color:#222;
+    font-size: 0.9rem;
+    margin:0 auto 20px auto;
+}
+div.section div.theCard span{
+    font-weight: bold;
+} 
+div.row div.theCard div.theInfo button{
+    display:none;
+}

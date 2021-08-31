@@ -1,0 +1,12 @@
+/* ----------------------------footer */
+footer{
+    height: 155px;
+}
+footer div.footerBox{
+    font-size: 0.875rem;
+    color: #fff;
+}
+footer div.footerBox img{
+    width:42px;
+    border-radius: 5px;
+}

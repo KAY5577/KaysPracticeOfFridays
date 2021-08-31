@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQueryUI 是用jQuery寫的，所以在套用時，要先引用jQuery，再引用jQuery. 即:要寫在jQuery的後面 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="./js/jquery-ui.js"></script> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/sectionNewsTypeA.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>news_Takeout-Discounts</title>
+</head>
+<body>
+    <!-- -----------------------------------------nav -->
+    <nav id="theNav"></nav>
+    <!-- -------------------------------------section sectionNewsTypeA-->
+    <div class="section sectionNewsTypeA m-0 p-0">
+        <div class="container-fluid theContainer m-0 p-0 mx-auto">
+            <div class="row m-0 p-3">
+                <!-- =========================================== -->
+                <div class="col-12 m-0 p-0 pb-3">
+                    <h1 class="theH1">【外帶優惠】FRIDAYS人氣精選菜單 外帶自取85折</h1>
+                    <p>美味袋著走！2021/8/10-2021/8/30期間限定，FRIDAYS推出【人氣精選菜單 外帶自取85折】</p>
+                    <p>集結15道熱門美味餐點，從開胃菜、主餐、分享拼盤等等皆有。</p>
+                    <p>划算又美味，任你挑選。點越多、省越多！</p>
+                </div>
+                <!-- =========================================== -->
+                <div class="col-12 m-0 p-0">
+                    <div class="row theImgCards justify-content-between">
+                        <!-- (1)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-1.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>自創開胃菜組合</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$536</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$630</h4>
+                                    </div>
+                                    <p class="pt-2">一次嚐盡所有Fridays™經典美味。快來組合屬於您的自創拼盤，可自選三樣開胃菜：香酥馬芝拉條 / 馬鈴薯皮 / 紐約辣雞翅 / 田納西芝麻雞柳 / 酥炸魚柳條。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (2)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-2.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>星期五海鮮總匯</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$536</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$630</h4>
+                                    </div>
+                                    <p class="pt-2">令人食指大動的開胃菜海鮮拼盤，一次吃到酥炸小管圈、魚柳條與酥炸蝴蝶蝦，開胃可口。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (3)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-3.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>整份雙醬炭烤豬肋排</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$833</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$980</h4>
+                                    </div>
+                                    <p class="pt-2">使用台灣本地農場飼養的優質豬肋排，整塊鮮嫩豬肋排與特製紐奧良調味料，塗上獨創雙醬，慢火炭烤至雙面焦香入味，搭配薯條與涼拌捲心菜。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (4)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-4.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>三式超級精選</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$808</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$950</h4>
+                                    </div>
+                                    <p class="pt-2">Fridays™最超值的組合，一次吃到紐奧良炸蝦、田納西芝麻雞柳及半份田納西威士忌炭烤豬肋排，適合大家一起分享。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (5)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-5.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>經典哈燒桶</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$638</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$750</h4>
+                                    </div>
+                                    <p class="pt-2">一次給您雙重美味享受，結合招牌炭烤豬肋排與雞翅，沾裹綜合經典蘋果烤肉醬與田納西醬，搭配微辣的青辣椒與酥炸洋蔥，挑動您的味蕾。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (6)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-6.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>經典哈燒桶</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$612</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$720</h4>
+                                    </div>
+                                    <p class="pt-2">精選8 oz.美國沙朗牛排，精心炭烤到您喜愛的熟度，可挑選任兩道主廚精選配菜與您自選的醬料一同享用。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (7)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-7.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>肋眼牛排</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$935</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$1100</h4>
+                                    </div>
+                                    <p class="pt-2">精選12oz.美國肋眼牛排，精心炭烤到您喜愛的熟度。可挑選任兩道主廚精選配菜與您自選的醬料一同享用。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (8)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-8.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>霸氣總裁拼盤</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$1352</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$1590</h4>
+                                    </div>
+                                    <p class="pt-2">Fridays™最招牌的炭烤系列給您最大滿足！經典的豬肋排塗上獨創雙醬與紐奧良調味料，烤至焦香入味，搭配以迷迭香、大蒜、奶油烘烤而成的鮮嫩半雞與七分熟的沙朗牛排佐紫蘇蕃茄沙拉，另可自選一道主廚精選配菜。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (9)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-9.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>費特希尼鮮蝦雞肉寬麵</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$536</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$630</h4>
+                                    </div>
+                                    <p class="pt-2">費特希尼義大利寬麵配上鮮嫩雞肉、特選鮮蝦、紅椒，以紐奧良調味料及香濃奶油一起拌炒，濃郁奶香帶有點微辣，最後撒上帕米森起司與青蔥。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (10)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-10.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>加勒比海海鮮飯</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$468</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$550</h4>
+                                    </div>
+                                    <p class="pt-2">充滿咖哩風味的茉莉香米飯加入大蒜、雞肉、蝴蝶蝦、小管圈、蕃茄丁、洋蔥、紅椒、青椒一起拌炒，最後放上香菜，微辣可口，喜歡異國海鮮料理的你絕對不能錯過。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (11)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-11.png">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>美味三奇雞</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$536</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$630</h4>
+                                    </div>
+                                    <p class="pt-2">FRIDAYS三重美味享受，結合墨西哥雞肉酥餅、紐約辣雞翅及田納西芝麻雞柳，適合多人一同享用。</p>
+                                    <p class="pt-2">* 內含芝麻</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (12)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-12.png">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>半份雙醬炭烤豬肋排拼酥炸雞柳條</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$782</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$920</h4>
+                                    </div>
+                                    <p class="pt-2">半份雙醬炭烤豬肋排與酥炸雞柳條組合在一起，搭配薯條、季節時蔬一同享用。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (13)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-a.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>沙朗牛排拼田納西芝麻雞柳</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$782</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$920</h4>
+                                    </div>
+                                    <p class="pt-2">8oz.美國沙朗牛排，精心炭烤到您喜愛的熟度，與田納西芝麻雞柳組合在一起，並可挑選任兩道主廚精選配菜與您自選的醬料一同享用。</p>
+                                    <p class="pt-2">* 內含芝麻</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (14)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-14.png">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>BBQ香烤半雞拼黃金魚柳條</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$782</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$920</h4>
+                                    </div>
+                                    <p class="pt-2">BBQ香烤半雞與炸黃金魚柳條組合在一起，搭配季節時蔬一同享用。</p>
+                                    <p class="pt-2">* 內含杏仁</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (15)&&&&&&&&&&&&&&&&&&&&&&&& -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-stretch">
+                            <div class="imgCard bg-gray mb-4">
+                                <div class="theImg w-100">
+                                    <img class="w-100" src="./img/discounts-a.jpg">
+                                </div>
+                                <div class="theInfo ps-3 pe-3">
+                                    <h3>炭烤豬肋排俱樂部</h3>
+                                    <div class="DiscountdPrice d-flex justify-content-between">
+                                        <h4>85折價</h4>
+                                        <h4>$985</h4>
+                                    </div>
+                                    <div class="OrignalPrice d-flex justify-content-between">
+                                        <h4>原價</h4>
+                                        <h4>$1053</h4>
+                                    </div>
+                                    <p class="pt-2">一次吃到三種風味的炭烤豬肋排－蘋果烤肉醬、田納西威士忌醬、雙醬，適合分享的主餐組合。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+                    </div>
+                </div>
+                <!-- =========================================== -->
+                <div class="col-12 m-0 p-1 pb-3">
+                    <h2>注意事項</h2>
+                    <ul class="m-0 p-0 ps-1">
+                        <li>優惠日期：2021/8/10-2021/8/30，本優惠僅適用於外帶。</li>
+                        <li>外帶自取85折優惠品項：自創開胃菜組合、星期五海鮮總匯、整份雙醬炭烤豬肋排、經典哈燒桶、三式超級精選、沙朗牛排、肋眼牛排、費特希尼鮮蝦雞肉寬麵、加勒比海海鮮飯、霸氣總裁拼盤、美味三奇雞、半份雙醬炭烤豬肋排拼酥炸雞柳條、沙朗牛排拼田納西芝麻雞柳、BBQ香烤半雞拼黃金魚柳條、炭烤豬肋排俱樂部。</li>
+                        <li>不得與任何行銷活動或優惠併用(包含信用卡優惠、網路會員、北軒VIP卡8折、熟客好康券、商業午餐優惠等，皆不得併用)。</li>
+                        <li>TGI FRIDAYS保留使用條款與修改權利。</li>
+                    </ul>
+                </div>
+                <!-- =========================================== -->
+            </div> <!-- row -->
+        </div> <!-- container-fluid -->
+    </div> <!-- section -->
+    <!-- -----------------------------------------footer -->
+    <footer id="theFooter"></footer>
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <script>
+        // import headerNav.html
+        $('#theNav').load('headerNav.html');
+        // import header.html
+        $('#theFooter').load('footer.html');
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/headerNav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>headerNav</title>
+</head>
+<body>
+    <!-- -----------------------------------------nav -->
+    <nav class="w-100 d-flex align-items-center px-5 py-2">
+        <!-- btn_burger -->
+        <div id="btnBurger" class="bergerBox text-center">
+            <span id="turnOn" class="material-icons" style="font-size:30px; font-weight: 600;">menu</span>
+            <span id="turnOff" class="material-icons" style="font-size:30px; font-weight: 600;">close</span>
+        </div>
+        <!-- logo -->
+        <div class="logoBox h-100">
+            <a href="./index.html">
+                <img class="h-100" src="./img/logo.JPG" alt="logo">
+            </a>
+        </div>
+        <!-- muliList -->
+        <div class="menuBox">
+            <ul class="d-flex list-unstyled px-4 mb-0">
+                <li><a href="./booking.html" target="_blank">線上訂位</a></li>
+                <li><a class="PageLocation" href="./location.html">餐廳店址</a></li>
+                <li><a class="PageMenu" href="./menu.html">線上菜單</a></li>
+                <li><a href="./members.html" target="_blank">加入會員</a></li>
+                <li><a class="PageContact" href="./contact.html">聯絡我們</a></li>
+                <li><a class="PageNews" href="./news.html">最新消息</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ------------------------------ -->
+    <!-- ------------------------------ -->
+    <!-- ------------------------------ -->
+    <script>
+        // nav 漢堡按鈕開關
+        $(function(){
+            $("div#btnBurger").on("click", function(){
+                $('.menuBox').toggleClass("showMenuBox");
+                $('#turnOn').toggleClass("hideMe");
+                $('#turnOff').toggleClass("showMe");
+            });
+        });
+    </script>
+</body>
+</html>
