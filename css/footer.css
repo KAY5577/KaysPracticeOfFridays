@@ -2,11 +2,12 @@
 footer{
     height: 155px;
 }
-footer div.footerBox{
+footer div.footerBox a{
     font-size: 0.875rem;
     color: #fff;
 }
 footer div.footerBox img{
     width:42px;
+    height:42px;
     border-radius: 5px;
 }
