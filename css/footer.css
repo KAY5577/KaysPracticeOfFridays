@@ -2,7 +2,8 @@
 footer{
     height: 155px;
 }
-footer div.footerBox{
+footer div.footerBox a,
+div.footerBox:last-child{
     font-size: 0.875rem;
     color: #fff;
 }
